@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Me Up!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-left">
+        </div>
+        <div class="main-right">
+            <div class="heading">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                <p>
+                    You know you want to.
+                </p>
+                </p>
+            </div>
+            <div class="form-container">
+                <div> Let's do this!</div>
+                <form action="">
+                    <div class="form-row">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" required>
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                        <label for="pnum">PHONE NUMBER</label>
+                        <input type="text" id="pnum" pattern="[8-9]{1}[0-9]{7}" Title="Please ensure 8 digits. First two digits have to start with 8 or 9."required>
+                    </div> 
+                    <div class="form-row">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password">
+                        <label for="cpassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="cpassword" required>
+                    </div> 
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
