@@ -120,3 +120,7 @@ input:focus {
     border: 1px solid blue;
     box-shadow: 10px 10px 10px #ccc;
 }
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
