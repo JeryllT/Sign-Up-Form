@@ -1,10 +1,21 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
 body {
+    font-family: norse-bold, sans-serif;
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .main-container {
     display:flex;
+    width: 100%;
 }
 
 form {
@@ -28,9 +39,60 @@ form {
 }
 
 .heading {
-    padding: 5rem 50rem 5rem 5rem;
+    font-size: 2rem;
+    min-height: 5rem;
+    min-width: 25rem;
+    padding: 5rem 5rem 5rem 3rem;
 }
 
 .form-row {
-    
+    display: flex;
 }
+
+.sub-form-row {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem 1rem 0rem;
+    width: 100%;
+}
+
+.middle-container {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    box-shadow: 0 10px 50px #ccc;
+}
+
+.heading,
+.middle-container > div {
+    font-weight: 700;
+}
+
+:root {
+    --main-common-green: rgb(89,108,73);
+}
+
+input[type="submit"] {
+    background-color: var(--main-common-green);
+    color:white;
+    margin: 3rem 3rem;
+    border-radius: 7px;
+    border-color: transparent;
+    padding: 1rem 2rem;
+    box-shadow: 0 10px 10px #ccc;
+    font-size: 1rem;
+}
+
+input[type="submit"] + div {
+    margin-left: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--main-common-green);
+}
+
+.middle-container > div {
+    font-size: 1.5rem;
+}
+
